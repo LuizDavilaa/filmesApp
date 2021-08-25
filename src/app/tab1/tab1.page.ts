@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { AlertController } from '@ionic/angular';
-import { ToastController } from '@ionic/angular';
 import { Router } from '@angular/router';
 
 @Component({
@@ -11,8 +10,30 @@ import { Router } from '@angular/router';
 export class Tab1Page {
   titulo = 'Filmes';
 
-  constructor(
-    public route: Router
-  ) {}
+  constructor(public alertController: AlertController) {}
+
+  async exibirAlertaFavorito() {
+    const alert = await this.alertController.create({
+      header: 'Alerta!',
+      message: 'Deseja realmente favoritar o filme?',
+      buttons: [
+        {
+          text: 'Cancelar',
+          role: 'cancel',
+          handler: (blah) => {
+            console.log('Confirm Cancel: blah');
+          }
+        }, {
+          text: 'SIM, favoritar!',
+          handler: () => {
+            console.log('Confirm Okay');
+          }
+        }
+      ]
+    });
+
+    await alert.present();
+  }
+
 
   }
