@@ -1,11 +1,35 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
+  <ion-toolbar color="dark">
+    <ion-title> Sobre </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" color="grey">
 
+  <ion-item lines="full">
+    <ion-avatar slot="end">
+      <img src="https://scontent.fbau1-1.fna.fbcdn.net/v/t1.6435-9/133560273_2816645361957289_1601708240222302982_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=KoK8guazZiUAX9G02LF&_nc_ht=scontent.fbau1-1.fna&oh=ec2a6d534eafff0b1ace33ad0e7c9a3d&oe=61494174" alt="">
+    </ion-avatar>
+    <ion-label class="ion-text-wrap">
+      <div>
+        <h2>Luiz Felipe D'Avila</h2>
+        <p>Aluno da Etec "Cidade do Livro"</p>
+        <p>Lençóis Paulista-SP</p>
+        <p>(14) 99864-1204</p>
+      </div>
+    </ion-label>
+  </ion-item>
+
+  <ion-item lines="full">
+    <ion-label>Versão</ion-label>
+    <ion-badge slot="end" color="red">0.1</ion-badge>
+  </ion-item>
+  <ion-item lines="full">
+    <ion-label>Ano</ion-label>
+    <ion-badge slot="end" color="red">2021</ion-badge>
+  </ion-item>
+  <ion-item lines="full">
+    <ion-label>Turma</ion-label>
+    <ion-badge slot="end" color="red">A</ion-badge>
+  </ion-item>
 </ion-content>
