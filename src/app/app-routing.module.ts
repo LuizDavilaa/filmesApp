@@ -25,6 +25,10 @@ const routes: Routes = [
   {
     path: 'leao',
     loadChildren: () => import('./filmes/leao/leao.module').then( m => m.LeaoPageModule)
+  },
+  {
+    path: 'dados-filme',
+    loadChildren: () => import('./dados-filme/dados-filme.module').then( m => m.DadosFilmePageModule)
   }
 ];
 @NgModule({
