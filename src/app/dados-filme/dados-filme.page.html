@@ -1,31 +1,33 @@
 <ion-header>
   <ion-toolbar color="dark">
-
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
 
-    <ion-title>
-      Dados do Filme
-    </ion-title>
+    <ion-title> Dados do Filme </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content color="grey">
   <ion-card *ngIf="filme">
     <ion-card-header>
-      <img [src]="filme.cartaz">
+      <img
+        *ngIf="filme.poster_path"
+        src="https://www.themoviedb.org/t/p/w500/{{filme.poster_path}}"
+      />
     </ion-card-header>
 
     <ion-card-content>
       <h1>
-        {{filme.nome}} -
-        <ion-chip color="green">{{filme.classificacao}}%</ion-chip>
+        {{filme.title}} -
+        <ion-chip color="green">{{filme.vote_average}}%</ion-chip>
       </h1>
-      <p>{{filme.lancamento}} - {{filme.duracao}}</p>
+      <p>{{filme.release_date | date:'shortDate'}}</p>
     </ion-card-content>
     <ion-item>
-      <ion-badge color="grey" *ngFor="let genero of filme.generos">{{genero}}</ion-badge>
+      <ion-badge color="grey" *ngFor="let idGenero of filme.genre_ids"
+        >{{generos[idGenero]}}</ion-badge
+      >
     </ion-item>
   </ion-card>
 </ion-content>
