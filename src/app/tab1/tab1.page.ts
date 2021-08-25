@@ -20,6 +20,8 @@ export class Tab1Page {
       cartaz:
         'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/igw938inb6Fy0YVcwIyxQ7Lu5FO.jpg',
       generos: ['Comédia', 'Thriller', 'Drama'],
+      pagina: '/parasita',
+
     },
     {
       nome: 'O Auto da Compadecida (2000)',
@@ -29,6 +31,8 @@ export class Tab1Page {
       cartaz:
         'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/m8eFedsS7vQCZCS8WGp5n1bVD0q.jpg',
       generos: ['Aventura', 'Comédia'],
+      pagina: '/compadecida',
+
     },
     {
       nome: 'Minha Mãe é uma Peça 3: O Filme (2019)',
@@ -38,6 +42,8 @@ export class Tab1Page {
       cartaz:
         'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/zw77BFPGJ73Lig8GwRzYj1XHq53.jpg',
       generos: ['Comédia'],
+      pagina: '/mae',
+
     },
     {
       nome: 'Aladdin (2019)',
@@ -47,6 +53,8 @@ export class Tab1Page {
       cartaz:
         'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/1d8HShFOmSWDwvqtvPEZqzlZbYl.jpg',
       generos: ['Romance', 'Drama'],
+      pagina: '/aladdin',
+
     },
     {
       nome: 'O Rei Leão (2019)',
@@ -56,6 +64,8 @@ export class Tab1Page {
       cartaz:
         'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/wrHr8eEJYDAA7WYybyH162s4oZ4.jpg',
       generos: ['Família', 'Aventura', 'Animação'],
+      pagina: '/leao',
+
     },
   ];
 
