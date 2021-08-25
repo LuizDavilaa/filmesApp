@@ -14,13 +14,13 @@ export class FilmeService {
   lingua = 'pt-BR';
   regiao = 'BR';
 
-  private apiURL = 'https://api.themoviedb.org/3';
+  private apiURL = 'https://api.themoviedb.org/3/';
   private key = '?api_key=9d59c60138c043b6aeae2709f6b85d4c';
 
   constructor(private http: HttpClient, public toastController: ToastController) { }
 
   buscarFilmes(busca: string): Observable<IListaFilmes>{
-    const url = `$(this.apiURL)search/movie${this.key}&language=${this.lingua}&region=${this.regiao}&query=${busca}`;
+    const url = `${this.apiURL}search/movie${this.key}&language=${this.lingua}&region=${this.regiao}&query=${busca}`;
 
     return this.http.get<IListaFilmes>(url).pipe(
       map(retorno => retorno),
