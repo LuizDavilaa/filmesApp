@@ -1,10 +1,67 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="dark">
-    <ion-title> Filmes </ion-title>
+    <ion-title> {{ titulo }} </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true" color="grey">
+  <ion-searchbar placeholder="Buscar filmes"></ion-searchbar>
 
+  <ion-list>
+
+    <ion-item-sliding>
+      <ion-item lines="full">
+        <ion-thumbnail slot="start">
+          <img
+            src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/wxHPYoY2Dl3vdEBhG4V09XNC3Kw.jpg"
+          />
+        </ion-thumbnail>
+        <ion-label class="ion-text-wrap">
+          <div>
+            <h1>Parasita</h1>
+            <p>07/11/2019 - 2h 12m</p>
+            <p>Comédia, Thriller, Drama</p>
+          </div>
+        </ion-label>
+
+        <ion-chip color="green" outline>
+          <ion-label>85%</ion-label>
+        </ion-chip>
+      </ion-item>
+
+      <ion-item-options side="end">
+        <ion-item-option color="red">
+          <ion-icon slot="icon-only" name="heart"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+      <ion-item lines="full">
+        <ion-thumbnail slot="start">
+          <img
+            src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/m8eFedsS7vQCZCS8WGp5n1bVD0q.jpg"
+          />
+        </ion-thumbnail>
+        <ion-label class="ion-text-wrap">
+          <div>
+            <h1> O Auto da Compadecida (2000) </h1>
+            <p>15/09/2000 - 1h 44m</p>
+            <p>Comédia, Aventura</p>
+          </div>
+        </ion-label>
+
+        <ion-chip color="green" outline>
+          <ion-label>85%</ion-label>
+        </ion-chip>
+      </ion-item>
+
+      <ion-item-options side="end">
+        <ion-item-option color="red">
+          <ion-icon slot="icon-only" name="heart"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+  </ion-list>
 </ion-content>
-
